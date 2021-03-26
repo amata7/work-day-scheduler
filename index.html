@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./develop/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -36,7 +40,7 @@
         in the finished product.) -->
 
       <!-- example of a past time block -->
-      <div id="hour-9" class="row time-block past">
+      <div id="hour-9" class="row time-block">
         <div class="col-md-1 hour">9AM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
@@ -45,7 +49,7 @@
       </div>
 
       <!-- example of a present time block -->
-      <div id="hour-10" class="row time-block present">
+      <div id="hour-10" class="row time-block">
         <div class="col-md-1 hour">10AM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
@@ -54,7 +58,7 @@
       </div>
 
       <!-- example of a future time block -->
-      <div id="hour-11" class="row time-block future">
+      <div id="hour-11" class="row time-block">
         <div class="col-md-1 hour">11AM</div>
         <textarea class="col-md-10 description"> </textarea>
         <button class="btn saveBtn col-md-1">
@@ -110,6 +114,8 @@
 
     <!-- link your javascript files here. (Must be after jquery is linked!
       You should be able to explain why that is to be "employer ready".) -->
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script src="./develop/script.js"></script>
   </body>
 </html>
