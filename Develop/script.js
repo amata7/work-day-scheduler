@@ -47,6 +47,8 @@ saveBtn09.addEventListener("click", function (event) {
 
 
 
+
+
 if (currentHour < 10) {
     document.getElementById("hour-10").classList.add('future');
 } else if (currentHour == 10){
@@ -66,6 +68,8 @@ saveBtn10.addEventListener("click", function (event) {
 
     localStorage.setItem("saved10AM", JSON.stringify(saved10AM));
 });
+
+
 
 
 
@@ -91,6 +95,8 @@ saveBtn11.addEventListener("click", function (event) {
 
 
 
+
+
 if (currentHour < 12) {
     document.getElementById("hour-12").classList.add('future');
 } else if (currentHour == 12){
@@ -110,6 +116,8 @@ saveBtn12.addEventListener("click", function (event) {
 
     localStorage.setItem("saved12PM", JSON.stringify(saved12PM));
 });
+
+
 
 
 
@@ -135,6 +143,8 @@ saveBtn01.addEventListener("click", function (event) {
 
 
 
+
+
 if (currentHour < 14) {
     document.getElementById("hour-14").classList.add('future');
 } else if (currentHour == 14){
@@ -154,6 +164,8 @@ saveBtn02.addEventListener("click", function (event) {
 
     localStorage.setItem("saved02PM", JSON.stringify(saved02PM));
 });
+
+
 
 
 
@@ -179,6 +191,8 @@ saveBtn03.addEventListener("click", function (event) {
 
 
 
+
+
 if (currentHour < 16) {
     document.getElementById("hour-16").classList.add('future');
 } else if (currentHour == 16){
@@ -201,6 +215,8 @@ saveBtn04.addEventListener("click", function (event) {
 
 
 
+
+
 if (currentHour < 17) {
     document.getElementById("hour-17").classList.add('future');
 } else if (currentHour == 17){
@@ -220,3 +236,68 @@ saveBtn05.addEventListener("click", function (event) {
 
     localStorage.setItem("saved05PM", JSON.stringify(saved05PM));
 });
+
+
+
+    if (!nineAM == "") {
+        var nine = JSON.parse(localStorage.getItem("saved09AM"));
+        document.getElementById("nineAM").innerHTML = nine.nineAM;
+        } else {
+            document.getElementById("nineAM").innerHTML = "";
+        }
+
+    if (!tenAM == "") {
+        var ten = JSON.parse(localStorage.getItem("saved10AM"));
+        document.getElementById("tenAM").innerHTML = ten.tenAM;
+        } else {
+            document.getElementById("tenAM").innerHTML = "";
+        }
+
+    if (!elevenAM == "") {
+        var eleven = JSON.parse(localStorage.getItem("saved11AM"));
+        document.getElementById("elevenAM").innerHTML = eleven.elevenAM;
+        } else {
+            document.getElementById("elevenAM").innerHTML = "";
+        }
+
+    if (!twelvePM == "") {
+        var twelve = JSON.parse(localStorage.getItem("saved12PM"));
+        document.getElementById("twelvePM").innerHTML = twelve.twelvePM;
+        } else {
+            document.getElementById("twelvePM").innerHTML = "";
+        }
+
+    if (!onePM == "") {
+        var one = JSON.parse(localStorage.getItem("saved01PM"));
+        document.getElementById("onePM").innerHTML = one.onePM;
+        } else {
+            document.getElementById("onePM").innerHTML = "";
+        }
+
+    if (!twoPM == "") {
+        var two = JSON.parse(localStorage.getItem("saved02PM"));
+        document.getElementById("twoPM").innerHTML = two.twoPM;
+        } else {
+            document.getElementById("twoPM").innerHTML = "";
+        }
+
+    if (!threePM == "") {
+        var three = JSON.parse(localStorage.getItem("saved03PM"));
+        document.getElementById("threePM").innerHTML = three.threePM;
+        } else {
+            document.getElementById("threePM").innerHTML = "";
+        }
+
+    if (!fourPM == "") {
+        var four = JSON.parse(localStorage.getItem("saved04PM"));
+        document.getElementById("fourPM").innerHTML = four.fourPM;
+        } else {
+            document.getElementById("fourPM").innerHTML = "";
+        }
+
+    if (!fivePM == "") {
+        var five = JSON.parse(localStorage.getItem("saved05PM"));
+        document.getElementById("fivePM").innerHTML = five.fivePM;
+        } else {
+            document.getElementById("fivePM").innerHTML = "";
+        }
