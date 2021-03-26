@@ -37,7 +37,7 @@ if (currentHour < 09) {
 saveBtn09.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved09AM = {
+    saved09AM = {
       nineAM: nineAM.value,
     };
 
@@ -62,7 +62,7 @@ if (currentHour < 10) {
 saveBtn10.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved10AM = {
+    saved10AM = {
       tenAM: tenAM.value,
     };
 
@@ -86,7 +86,7 @@ if (currentHour < 11) {
 saveBtn11.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved11AM = {
+    saved11AM = {
       elevenAM: elevenAM.value,
     };
 
@@ -110,7 +110,7 @@ if (currentHour < 12) {
 saveBtn12.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved12PM = {
+    saved12PM = {
       twelvePM: twelvePM.value,
     };
 
@@ -134,7 +134,7 @@ if (currentHour < 13) {
 saveBtn01.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved01PM = {
+    saved01PM = {
       onePM: onePM.value,
     };
 
@@ -158,7 +158,7 @@ if (currentHour < 14) {
 saveBtn02.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved02PM = {
+    saved02PM = {
       twoPM: twoPM.value,
     };
 
@@ -182,7 +182,7 @@ if (currentHour < 15) {
 saveBtn03.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved03PM = {
+    saved03PM = {
       threePM: threePM.value,
     };
 
@@ -206,7 +206,7 @@ if (currentHour < 16) {
 saveBtn04.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved04PM = {
+    saved04PM = {
       fourPM: fourPM.value,
     };
 
@@ -230,72 +230,70 @@ if (currentHour < 17) {
 saveBtn05.addEventListener("click", function (event) {
     event.preventDefault();
   
-    var saved05PM = {
+    saved05PM = {
       fivePM: fivePM.value,
     };
 
     localStorage.setItem("saved05PM", JSON.stringify(saved05PM));
 });
 
-
-
-    if (!nineAM == "") {
+    if (nineAM !== null) {
         var nine = JSON.parse(localStorage.getItem("saved09AM"));
         document.getElementById("nineAM").innerHTML = nine.nineAM;
         } else {
             document.getElementById("nineAM").innerHTML = "";
         }
 
-    if (!tenAM == "") {
+    if (tenAM !== null) {
         var ten = JSON.parse(localStorage.getItem("saved10AM"));
-        document.getElementById("tenAM").innerHTML = ten.tenAM;
+        document.getElementById("tenAM").textContent = ten.tenAM;
         } else {
-            document.getElementById("tenAM").innerHTML = "";
+            document.getElementById("tenAM").textContent = "";
         }
 
-    if (!elevenAM == "") {
+    if (elevenAM !== null) {
         var eleven = JSON.parse(localStorage.getItem("saved11AM"));
         document.getElementById("elevenAM").innerHTML = eleven.elevenAM;
         } else {
             document.getElementById("elevenAM").innerHTML = "";
         }
 
-    if (!twelvePM == "") {
+    if (twelvePM !== null) {
         var twelve = JSON.parse(localStorage.getItem("saved12PM"));
         document.getElementById("twelvePM").innerHTML = twelve.twelvePM;
         } else {
             document.getElementById("twelvePM").innerHTML = "";
         }
 
-    if (!onePM == "") {
+    if (onePM !== null) {
         var one = JSON.parse(localStorage.getItem("saved01PM"));
         document.getElementById("onePM").innerHTML = one.onePM;
         } else {
             document.getElementById("onePM").innerHTML = "";
         }
 
-    if (!twoPM == "") {
+    if (twoPM !== null) {
         var two = JSON.parse(localStorage.getItem("saved02PM"));
         document.getElementById("twoPM").innerHTML = two.twoPM;
         } else {
             document.getElementById("twoPM").innerHTML = "";
         }
 
-    if (!threePM == "") {
+    if (threePM !== null) {
         var three = JSON.parse(localStorage.getItem("saved03PM"));
         document.getElementById("threePM").innerHTML = three.threePM;
         } else {
             document.getElementById("threePM").innerHTML = "";
         }
 
-    if (!fourPM == "") {
+    if (fourPM !== null) {
         var four = JSON.parse(localStorage.getItem("saved04PM"));
         document.getElementById("fourPM").innerHTML = four.fourPM;
         } else {
             document.getElementById("fourPM").innerHTML = "";
         }
 
-    if (!fivePM == "") {
+    if (fivePM !== null) {
         var five = JSON.parse(localStorage.getItem("saved05PM"));
         document.getElementById("fivePM").innerHTML = five.fivePM;
         } else {
