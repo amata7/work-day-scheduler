@@ -11,6 +11,10 @@ If there is nothing inside of a text box, then the next text box wont display it
 
 ![Getting Started](./Assets/4.png)
 
-This is what the site looks like with something filled out for every box, and the time set to 1PM. 
+This is what the site looks like with something filled out for every box, and the time set to 1PM.
 
 ![Getting Started](./Assets/5.png)
+
+--todo--
+fix text fields not displaying unless there is an entry in the previous hour block
+maybe something to do with the save button? i remember some work needed to be done on that but not sure atm
