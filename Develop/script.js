@@ -1,7 +1,7 @@
 var currentDay = moment();
 $("#currentDay").text(currentDay.format("MMM Do, YYYY"));
 
-var currentHour = moment().format("HH");
+var currentHour = 12;
 
 var saveBtn09 = document.getElementById("save09");
 var saveBtn10 = document.getElementById("save10");
